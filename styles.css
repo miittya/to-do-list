@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gabarito', cursive;
+}
+
+body {
+    background-color: darkslategrey;
+    /* background-image: url("background.jpg");
+    background-size: cover; */
+}
+
+h1 {
+    padding: 20px 30px;
+}
+
+.themeRow {
+    display: flex;
+}
+
+.main {
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    width: 40%;
+    margin: 100px auto;
+    border-radius: 25px;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.themeButton {
+    height: 40px;
+    width: 40px;
+    margin: auto 200px;
+}
+
+.search {
+    border: none;
+    padding: 15px 140px 15px 15px;
+    margin-left: 20px;
+    margin-right: 12px;
+    outline: none;
+    border-radius: 18px;
+    background-color: rgb(242, 242, 242);
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content:center;
+}
+
+.addButton {
+    background: rgb(161, 172, 172);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 12px;
+    border-radius: 50%;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.addButton:hover {
+    opacity: 0.9;
+}
+
+.taskList {
+    margin: 20px auto;
+    width: 75%;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    justify-content: space-between;
+    /* border: 1px solid gray; */
+}
+
+.done {
+    border: 1px solid rgb(211, 211, 211);
+    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.15); */
+    background-color: #fff;
+    color: #fff;
+    font-family: inherit;
+    height: 30px;
+    width: 30px;
+    margin: 10px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.done:hover {
+    background-color: #f7f7f7;
+}
+
+.taskText {
+    margin: auto 6px;
+    cursor: pointer;
+}
+
+.delete {
+    border: none;
+    background-image: url(x.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    height: 25px;
+    width: 25px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 0.9;
+}
