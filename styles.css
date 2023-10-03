@@ -4,29 +4,32 @@
     margin: 0;
     padding: 0;
     font-family: 'Gabarito', cursive;
+    box-sizing: border-box;
 }
 
 body {
+    padding: 20px;
     background-color: darkslategrey;
-    /* background-image: url("background.jpg");
-    background-size: cover; */
 }
 
-h1 {
-    padding: 20px 30px;
+.container {
+    margin: 0 auto;
 }
 
-.themeRow {
-    display: flex;
-}
-
-.main {
+.app {
+    margin: 0 auto;
     background-color:rgb(255, 255, 255);
-    height: 500px;
-    width: 40%;
+    width: 50%;
+    min-width: 440px;
     margin: 100px auto;
     border-radius: 25px;
     box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+
+.app h1 {
+    padding: 20px 30px;
 }
 
 .themeButton {
@@ -35,7 +38,8 @@ h1 {
     margin: auto 200px;
 }
 
-.search {
+.search_bar {
+    width: 80%;
     border: none;
     padding: 15px 140px 15px 15px;
     margin-left: 20px;
@@ -47,6 +51,7 @@ h1 {
 
 ::placeholder {
     font-size: 15px;
+    opacity: 0.7;
 }
 
 .row {
@@ -56,7 +61,7 @@ h1 {
     justify-content:center;
 }
 
-.addButton {
+.add_button {
     background: rgb(161, 172, 172);
     color: #fff;
     border: none;
@@ -66,13 +71,14 @@ h1 {
     border-radius: 50%;
     font-family: inherit;
     font-size: 13px;
+    margin-right: 20px;
 }
 
-.addButton:hover {
+.add_button:hover {
     opacity: 0.9;
 }
 
-.taskList {
+.task_list {
     margin: 20px auto;
     width: 75%;
 }
@@ -82,12 +88,10 @@ li {
     list-style-type: none;
     height: 50px;
     justify-content: space-between;
-    /* border: 1px solid gray; */
 }
 
 .done {
     border: 1px solid rgb(211, 211, 211);
-    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.15); */
     background-color: #fff;
     color: #fff;
     font-family: inherit;

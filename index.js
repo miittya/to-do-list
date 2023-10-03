@@ -1,4 +1,4 @@
-const Task = document.querySelector('.search');
+const Task = document.querySelector('.search_bar');
 Task.addEventListener('keydown', function(event) {
     if (event.keyCode === 13) {
         addTask();
@@ -6,8 +6,8 @@ Task.addEventListener('keydown', function(event) {
 })
 
 function addTask(){
-    const Task = document.querySelector('.search');
-    const List = document.querySelector('.taskList');
+    const Task = document.querySelector('.search_bar');
+    const List = document.querySelector('.task_list');
     const Text = Task.value;
     const textOnlyWords = Text.trim();
 
@@ -25,7 +25,7 @@ function addTask(){
 }
 
 function deleteTask(button) {
-    const List = document.querySelector('.taskList');
+    const List = document.querySelector('.task_list');
     const Item = button.parentElement;
     List.removeChild(Item);
 }
@@ -42,5 +42,20 @@ function markAsDone(button) {
         Text.style.opacity = "0.7";
         button.style.backgroundColor = "rgb(161, 172, 172)";
         button.textContent = "✓";
+    }
+}
+
+window.addEventListener("load", updatePlaceHolder);
+window.addEventListener("resize", updatePlaceHolder);
+
+function updatePlaceHolder() {
+    const task = document.querySelector('.search_bar');
+
+    if (window.innerWidth <= 380 && window.innerWidth > 270) {
+        task.placeholder = 'Add task';
+    } else if (window.innerWidth <= 270) {
+        task.placeholder = '';
+    } else {
+        task.placeholder = 'Add new task';
     }
 }
