@@ -40,7 +40,7 @@ function markAsDone(button) {
     } else { 
         Text.style.textDecoration = "line-through";
         Text.style.opacity = "0.7";
-        button.style.backgroundColor = "rgb(161, 172, 172)";
+        button.style.backgroundColor = "rgb(52,122,128)";
         button.textContent = "✓";
     }
 }

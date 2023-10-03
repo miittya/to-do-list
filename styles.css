@@ -9,7 +9,10 @@
 
 body {
     padding: 20px;
-    background-color: darkslategrey;
+    /* background-color: darkslategrey; */
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -30,6 +33,7 @@ body {
 
 .app h1 {
     padding: 20px 30px;
+    font-weight: bold;
 }
 
 .themeButton {
@@ -64,7 +68,7 @@ body {
 }
 
 .add_button {
-    background: rgb(161, 172, 172);
+    background: rgb(52,122,128);
     color: #fff;
     border: none;
     outline: none;
