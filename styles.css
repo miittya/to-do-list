@@ -10,7 +10,7 @@
 body {
     padding: 20px;
     /* background-color: darkslategrey; */
-    background-image: url(bg.jpg);
+    background-image: url(images/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -119,7 +119,7 @@ li {
 
 .delete {
     border: none;
-    background-image: url(x.jpg);
+    background-image: url(images/x.jpg);
     background-size: cover;
     opacity: 0.6;
     height: 25px;
